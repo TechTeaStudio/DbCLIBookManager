@@ -31,7 +31,7 @@ cd DbCLIBookManager
 2. **Set up your PostgreSQL database:**
 
 Create the database and the necessary tables by running the following SQL:
-
+```sql
 CREATE DATABASE LibraryDB;
 CREATE TABLE Books (
     Id SERIAL PRIMARY KEY,
@@ -42,7 +42,7 @@ CREATE TABLE Books (
     Pages INT CHECK (Pages > 0),
     Language VARCHAR(50)
 );
-
+```
 3. **Configure your connection string:**
 
 In the C:\TechTeaStudio\Configurations\DbTextManager , create a `config.json` file with the following structure:
@@ -56,9 +56,10 @@ Make sure to replace `"yourpassword"` with your actual PostgreSQL password.
 4. **Run the application:**
 
 Build and run the project:
-
+```bash
 dotnet build
 dotnet run
+```
 
 ## Commands 🎮
 
